@@ -3,9 +3,7 @@
 A simple and fun React app that lets users enter their name and “open” a Valentine envelope to reveal a personalized message. Perfect for sending a small romantic gesture to someone special.
 
 ## 🖥 Demo
-
-(Optional: add a deployed link here if you host it on Netlify, Vercel, etc.)
-Example: https://your-valentine-app.netlify.app
+ https://val-crd.netlify.app
 
 ## ⚡ Features
 
