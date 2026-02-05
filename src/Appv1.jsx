@@ -1,19 +1,8 @@
 import { useState } from "react";
 
-const loveMessages = [
-  "Happy Valentine's Day! You mean more to me than words can explain.",
-  "Even from a distance, my heart chooses you every single day.",
-  "You are my favorite notification and my sweetest thought.",
-  "Loving you feels easy, natural, and endlessly beautiful.",
-  "Every day with you in my heart is a good day.",
-];
-
-
 function App() {
   const [name, setName] = useState("");
   const [isOpened, setIsOpened] = useState(false);
-  const [message, setMessage] = useState("");
-
 
   function handleNameChange(e) {
     setName(e.target.value);
@@ -25,10 +14,6 @@ function App() {
     if (name.trim() === "") {
       return
     }
-
-     const randomIndex = Math.floor(Math.random() * loveMessages.length);
-    
-    setMessage(loveMessages[randomIndex]);
     
     setIsOpened(true);
   }
@@ -46,7 +31,7 @@ function App() {
       </div>
       {!isOpened ? (
         <div className="envelope closed">
-          <h2>💌 A Valentine Message 🌹</h2>
+          <h2>💌 A Valentine Message</h2>
           <form onSubmit={handleOpen}>
             <input
               type="text"
@@ -60,8 +45,11 @@ function App() {
       ) : (
         <div className="envelope opened">
           <h2>💖 Dear {name},</h2>
-          <p>{message}</p>
-          <p className="signature">- Yours always 💘</p>
+          <p>
+            Happy Valentine's Day, You mean more to me than words can explain.
+            Even from a distance, my heart chooses you every single day
+          </p>
+          <p className="signature">- Yours always</p>
         </div>
       )}
     </div>

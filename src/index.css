@@ -28,6 +28,11 @@ body {
   z-index: 2;
 }
 
+.envelope > h2{
+  font-size: 1.23rem;
+  color: #db0e6a;
+}
+
 .closed {
   transform: scale(1);
 }
